@@ -4,26 +4,31 @@
  */
 
 /**
- * Import variables
- */
-
-@import "settings/variables";
-
-/**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+/**
+ * Import ITCSS structure
+ * Import files using ITCSS order
+ */
+@import "settings/variables";
+@import "tools/mixins";
+@import "generic/reset";
+@import "elements/typography";
+@import "components/header";
+@import "components/footer";
+@import "components/main-content";
+@import "utilities/modifiers";
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "components/home";
+// @import "components/home";
 
 /**
  * Do NOT include anything else in this file!

@@ -1,0 +1,60 @@
+.footer {
+  background-color: $color-green-primary;
+  color: $color-light;
+  padding: $padding_header_footer;
+  text-align: center;
+  
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+  }
+  
+  &__contact {
+    margin-bottom: 20px;
+    display: none; // Oculta contacto en mobile
+
+    @media (min-width: $tablet) {
+      display: block; // Muestra contacto en tablet y escritorio
+    }
+  }
+  
+  &__title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: $color-light;
+  }
+  
+  &__social {
+    display: flex;
+    justify-content: center;
+  
+    &-list {
+      display: flex;
+      gap: 10px;
+    }
+  
+    &-link {
+      font-size: 1.5rem;
+      color: $color-light;
+      transition: color 1s ease;
+
+      &:hover {
+        color: $color-dark;
+      }
+
+      // Colores específicos para cada red social
+      &--facebook { color: #4267B2; } 
+      &--instagram { color: #C13584; }
+      &--twitter { color: #1DA1F2; }
+      &--linkedin { color: #2867B2; }
+      &--whatsapp { color: #25D366; }
+    }
+  }
+}
+  
