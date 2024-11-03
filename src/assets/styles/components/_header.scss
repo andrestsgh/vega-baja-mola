@@ -60,9 +60,11 @@
   &__link {
     color: $color-light;
     text-decoration: none;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: color 1s ease;
-
+    line-height: 2rem;
+    
     &:hover {
       color: $color-dark;
     }
@@ -74,7 +76,9 @@
 
     &--active {
       font-weight: bold;
-      text-decoration: underline;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      border-bottom-color: $color-light;
     }
   }
 }

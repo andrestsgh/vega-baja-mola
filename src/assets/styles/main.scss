@@ -18,9 +18,11 @@
 @import "tools/mixins";
 @import "generic/reset";
 @import "elements/typography";
+@import "objects/button";
 @import "components/header";
 @import "components/footer";
-@import "components/main-content";
+@import "components/card-info";
+@import "components/home";
 @import "utilities/modifiers";
 
 /**
@@ -29,6 +31,7 @@
  */
 
 // @import "components/home";
+
 
 /**
  * Do NOT include anything else in this file!

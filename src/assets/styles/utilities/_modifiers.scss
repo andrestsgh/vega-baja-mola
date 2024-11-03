@@ -1,9 +1,25 @@
 .margin-sm {
-  margin: 10px;
+  margin: $small-px;
 }
 
 .margin-md {
-  margin: 20px;
+  margin: $medium-px;
+}
+
+.margin-bg {
+  margin: $big-px;
+}
+
+.padding-sm {
+  padding: $small-px;
+}
+
+.padding-md {
+  padding: $medium-px;
+}
+
+.padding-bg {
+  padding: $big-px;
 }
 
 .text-center {
